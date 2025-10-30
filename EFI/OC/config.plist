@@ -197,9 +197,9 @@
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
 				<key>layout-id</key>
-				<integer>3</integer>
+				<integer>8</integer>
 				<key>model</key>
-				<string>Realtek ALC1220</string>
+				<string>Realtek ALCS1220A</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
@@ -207,8 +207,6 @@
 				<data>BwCbPg==</data>
 				<key>AAPL,slot-name</key>
 				<string>Internal@0,2,0</string>
-				<key>hda-gfx</key>
-				<string>onboard-1</string>
 				<key>device-id</key>
 				<data>mz4AAA==</data>
 				<key>device_type</key>
@@ -225,8 +223,12 @@
 				<data>AQAAAA==</data>
 				<key>framebuffer-unifiedmem</key>
 				<data>AAAAgA==</data>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
 				<key>model</key>
 				<string>Intel UHD Graphics 630 (Desktop)</string>
+				<key>disable-gpu</key>
+				<true/>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -355,6 +357,24 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/SMCSuperIO</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>DebugEnhancer.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/DebugEnhancer</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -858,7 +878,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v keepsyms=1 shikigva=80 agdpmod=pikera</string>
+				<string>-v keepsyms=1 shikigva=80 agdpmod=pikera -dbgenhdbg</string>
 				<key>csr-active-config</key>
 				<data>7w8AAA==</data>
 				<key>prev-lang:kbd</key>
